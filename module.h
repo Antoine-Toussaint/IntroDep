@@ -7,3 +7,4 @@ void print_input();
 int mylen(const char s[]);
 int compare_string(const char s0[], const char s1[]);
 int is_palyndrome(const char s[]);
+int one_bits(int n);

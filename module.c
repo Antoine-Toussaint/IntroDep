@@ -121,3 +121,16 @@ int is_palyndrome(const char s[])
         return 1;
     }
 }
+
+int one_bits(int n)
+{
+    int count = 0;
+
+    for (int i = 0; i < 32; i++)
+    {
+        count += n%2;
+        n = n >> 1;
+    }
+
+    return count;
+}
