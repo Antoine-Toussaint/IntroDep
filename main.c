@@ -21,9 +21,10 @@ int main()
 
     //printf("%d\n", mylen("gitpdzd,zush"));
 
-    char s0[] = "hello";
-    char s1[] = "hello";
-    //printf("%d", compare_string(s0,s1));
+    // char s0[] = "pbcd";
+    // char s1[] = "bcda";
+    // printf("%d\n", compare_string(s0,s1));
+    
 
     return 0;
 }

@@ -73,5 +73,20 @@ int mylen(const char s[])
 
 int compare_string(const char s0[], const char s1[])
 {
-    return 0;
+    if(!(*s0) && !(*s1))
+    {
+        return 0;
+    }
+    else if(!(*s0) || ((*s0) < (*s1)))
+    {
+        return 1;
+    }
+    else if(!(*s1) || ((*s0) > (*s1)))
+    {
+        return -1;
+    }
+    else
+    {
+        return compare_string(s0+1, s1+1);
+    }
 }
