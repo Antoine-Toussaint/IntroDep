@@ -2,6 +2,7 @@
 #include "module.h"
 #include "python-array.h"
 #include "date.h"
+#include "person.h"
 
 int main()
 {
@@ -48,9 +49,25 @@ int main()
     // print_list(t);
     #pragma endregion
 
-    Date *d0 = create_date(11,04,2002), *d1 = create_date(5,9,2022);
-    print_date(d0);
-    print_date(d1);
+    // Date *d0 = create_date(11,04,2002);
+    // print_date(d0);
+    // Date *d1 = create_date(5,9,2022);
+    // print_date(d1);
+
+    // Date *d = create_date(12,10,1990);
+    // print_date(d);
+    // Person * p = create_person("Clement", "Di Fiore", d);
+    // print_person(p);
+    
+    // printf("%d\n", dates_égales(d, create_date(12,10,1990)));
+    // printf("%d\n", dates_égales(d, create_date(2,10,1990)));
+
+    // print_date(duplicate_date(d));
+
+    DateList *dl = insert_date_list(NULL, create_date(12,10,1990));
+    dl = insert_date_list(dl, create_date(11,04,2002));
+    dl = insert_date_list(dl, create_date(23,06,2000));
+    print_date_list(dl);
 
     return 0;
 }

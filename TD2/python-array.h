@@ -1,3 +1,6 @@
+#ifndef pythonarray
+#define pythonarray
+
 int * empty();
 int length(int * t);
 int available_length(int *t);
@@ -15,3 +18,5 @@ int get_el(int * t, int i);
 int superior_2_power(int n);
 //returns a slice of the list, from i index included to j index excluded
 int * subarray(int * t, int i, int j);
+
+#endif
