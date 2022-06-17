@@ -3,8 +3,11 @@
 
 int main()
 {
-    int a = fibonacci(5);
-    printf("%d\n",a);
+    for (int i = 0; i < 100; i++)
+    {
+        printf("%d\n",fibonacci(i));
+    }
+    
 
     return 0;
 }
