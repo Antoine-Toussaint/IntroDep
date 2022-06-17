@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "module.h"
 #include "python-array.h"
+#include "date.h"
 
 int main()
 {
@@ -47,7 +48,9 @@ int main()
     // print_list(t);
     #pragma endregion
 
-    
+    Date *d0 = create_date(11,04,2002), *d1 = create_date(5,9,2022);
+    print_date(d0);
+    print_date(d1);
 
     return 0;
 }
