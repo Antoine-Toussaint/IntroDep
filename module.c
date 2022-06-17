@@ -1,4 +1,5 @@
 #include "module.h"
+#include <stdio.h>
 
 int addone(int n){
     return n+1;
@@ -32,4 +33,21 @@ int * pairs()
     }
     
     return t;
+}
+
+void print_tableau(int t[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d\n",t[i]);
+    }
+}
+
+void sum_array(int t0[], int t1[], int result[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        result[i] = t0[i] + t1[i];
+    }
+    
 }
