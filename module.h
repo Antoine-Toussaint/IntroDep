@@ -6,3 +6,4 @@ void sum_array(int t0[], int t1[], int result[], int n);
 void print_input();
 int mylen(const char s[]);
 int compare_string(const char s0[], const char s1[]);
+int is_palyndrome(const char s[]);

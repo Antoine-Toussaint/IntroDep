@@ -90,3 +90,34 @@ int compare_string(const char s0[], const char s1[])
         return compare_string(s0+1, s1+1);
     }
 }
+
+int is_palyndrome(const char s[])
+{
+    int len = mylen(s);
+    if(len%2 == 0)
+    {
+        for (int i = 0; i < len/2; i++)
+        {
+            printf("%c et %c\n", s[i], s[len -1 -i]);
+            if(s[i] != s[len-1-i])
+            {
+                return 0;
+            }
+        }
+
+        return 1;
+    }
+    else
+    {
+        for (int i = 0; i < (len-1)/2; i++)
+        {
+            printf("%c et %c\n", s[i], s[len -1 -i]);
+            if(s[i] != s[len-1-i])
+            {
+                return 0;
+            }
+        }
+
+        return 1;
+    }
+}
