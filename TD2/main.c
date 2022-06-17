@@ -14,16 +14,36 @@ int main()
     // char s[] = "hey you ebay";
     // printf("%s\n", modif_first_character(s));
 
-    int * p = empty();
-    printf("%d\n", length(p));
-    print_list(p);
-    int * l = append(p, 7);
-    l = insert(l, 8);
-    l = insert(l, 4);
-    l = insert(l, 6);
-    l = append(l, 9);
-    print_list(l);
-    printf("%d\n",get_el(l,2));
-    print_list(subarray(l,1, 3));
+    int *t = empty();
+    printf("t initialized : ");
+    print_list(t);
+
+    t = append(t, 5);
+    t = append(t, 78);
+    t = append(t, 15);
+    print_list(t);
+
+    t = insert(t, 8);
+    t = insert(t, 9);
+    t = insert(t, 10);
+    print_list(t);
+
+    t = append(t, 4);
+    t = append(t, 5);
+    t = append(t, 6);
+    t = append(t, 7);
+    t = append(t, 8);
+    t = append(t, 9);
+    t = append(t, 10);
+    t = append(t, 11);
+    print_list(t);
+
+    t = insert(t, 7);
+    t = insert(t, 8);
+    t = insert(t, 9);
+    t = insert(t, 10);
+    t = insert(t, 11);
+    print_list(t);
+
     return 0;
 }
