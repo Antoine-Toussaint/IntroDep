@@ -51,3 +51,27 @@ void sum_array(int t0[], int t1[], int result[], int n)
     }
     
 }
+
+void print_input()
+{
+    char c[100];
+    scanf("%s",c);
+    printf("%s\n",c);
+}
+
+int mylen(const char s[])
+{
+    int size = 0;
+
+    while (*s) {
+        size += 1;
+        s +=1;
+    }
+
+    return size;
+}
+
+int compare_string(const char s0[], const char s1[])
+{
+    return 0;
+}
