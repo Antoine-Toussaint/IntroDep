@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/x0000000001/Documents/C/IntroDep'
+make: Leaving directory '/home/x0000000001/Documents/C/IntroDep'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
