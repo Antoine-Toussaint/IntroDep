@@ -1,3 +1,4 @@
+#include "module.h"
 #include <stdlib.h>
 
 int mylen(const char s[])
